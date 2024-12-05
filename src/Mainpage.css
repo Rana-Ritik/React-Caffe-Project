@@ -1,0 +1,47 @@
+.delivery-scooter {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  .scooter-image {
+    width: 200px; /* Adjust as needed */
+    animation: slide-in 3s forwards;
+  }
+  
+  .hover-text {
+    position: absolute;
+    bottom: 20%;
+    font-size: 24px;
+    color: #333;
+    opacity: 0;
+    animation: fade-in 3s forwards;
+    animation-delay: 1s; /* Delay text appearance */
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .main-content {
+    /* Add styles for the main content here if needed */
+  }
+  
